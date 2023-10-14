@@ -1,0 +1,8 @@
+#loginForm{
+    width:50%;
+    margin: 50px;
+    background-color: #588157;
+}
+body{
+    display: flex;
+}
