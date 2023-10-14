@@ -1,0 +1,57 @@
+.a {
+    color: #000;
+
+    font-family: Inter;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+#TravelPlanner{
+    display: flex;
+}
+
+#line1{
+    width: 1500px;
+    height: 10px;
+    flex-shrink: 0;
+    background: #588157;
+}
+
+#schedule{
+    margin-top:20px;
+    background:#F0F8FF
+}
+
+#ecoStats{
+    display:inline-block;
+    width: 500px;
+    height: 200px;
+    flex-shrink: 0;
+    background-color: #D9D9D9;
+}
+
+#line2{
+    width: 674px;
+    height: 15px;
+    flex-shrink: 0;
+    background: #344E41;   
+}
+
+#EcoFrindlySuggestions{
+    width: 100%;
+}
+
+.card{
+    width: 10px;
+}
+
+.row{
+    justify-content: space-between;
+}
+
+#location{
+    display: flex;
+    overflow: hidden;
+}
