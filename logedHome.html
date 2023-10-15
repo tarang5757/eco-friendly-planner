@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="home.css">
+        <script src="home.js" async defer></script>
+    </head>
+    <body>
+        <nav class="navbar navbar-light bg-light bg-white">
+            <a class="navbar-brand" href="#mainPage">
+              <img src="/assets/logo.png" width="80" height="80" class="d-inline-block align-top" alt="">
+            </a>
+            <a class="navbar-brand" href="#mainPage">
+               Home
+            </a>
+            <a class="navbar-brand" href="#suggestions">
+                Suggestions
+             </a>
+             <a class="navbar-brand" href="#destinations">
+                Destinations
+             </a>
+             <a class="navbar-brand" href="TravelPlanner.html">
+                Planner
+             </a>
+             <a class="navbar-brand" href="#aboutUs">
+                About us
+             </a>
+             <a class="navbar-brand" href="#mainPage">
+                Username
+                <svg xmlns="http://www.w3.org/2000/svg" width="50" height="46" viewBox="0 0 111 101" fill="none">
+                    <ellipse cx="55.5" cy="42.0834" rx="13.875" ry="12.625" stroke="#222222" stroke-linecap="round"/>
+                    <ellipse cx="55.5" cy="50.5" rx="41.625" ry="37.875" stroke="#222222"/>
+                    <path d="M83.25 78.7207C81.6132 74.2465 78.0064 70.293 72.9891 67.4732C67.9717 64.6534 61.8242 63.125 55.5 63.125C49.1758 63.125 43.0283 64.6534 38.011 67.4732C32.9936 70.293 29.3868 74.2465 27.75 78.7207" stroke="#222222" stroke-linecap="round"/>
+                </svg>
+             </a>
+        </nav>
+        <div id="mainPage">
+            <div id="homePage">
+                <h3>Your</h3>
+                <h1>Eco-Friendly Travel Planner</h1>
+                <p>
+                    Harnessing the power of Artificial Intelligence, our AI-driven planner takes travel to a whole new level. It's not just about exploring the world; it's about doing so sustainably and with your preferences in mind. Using cutting-edge machine learning, this planner deciphers your travel desires and crafts personalized, budget Eco-friendly travel recommendations that suit your tastes.
+                </p>
+            </div>
+            <div id="input" class="row">
+                <div class="col-3" id="locationSearch">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="43" height="47" viewBox="0 0 43 47" fill="none">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M21.9259 35.0262C24.1192 33.8281 34.0418 27.843 34.0418 17.625C34.0418 10.0541 28.4267 3.91669 21.5002 3.91669C14.5736 3.91669 8.9585 10.0541 8.9585 17.625C8.9585 27.843 18.8812 33.8281 21.0745 35.0262C21.3454 35.1742 21.6549 35.1742 21.9259 35.0262ZM21.5002 23.5C24.4687 23.5 26.8752 20.8697 26.8752 17.625C26.8752 14.3803 24.4687 11.75 21.5002 11.75C18.5316 11.75 16.1252 14.3803 16.1252 17.625C16.1252 20.8697 18.5316 23.5 21.5002 23.5Z" fill="#7E869E" fill-opacity="0.25"/>
+                        <path d="M21.9259 35.0262L22.2135 35.5527V35.5527L21.9259 35.0262ZM21.0745 35.0262L20.7868 35.5527L20.7868 35.5527L21.0745 35.0262ZM33.4418 17.625C33.4418 22.5274 31.0633 26.4382 28.3697 29.2966C25.6754 32.1556 22.707 33.9158 21.6382 34.4996L22.2135 35.5527C23.3381 34.9384 26.4276 33.1071 29.243 30.1195C32.059 27.1313 34.6418 22.9406 34.6418 17.625H33.4418ZM21.5002 4.51669C28.0462 4.51669 33.4418 10.3341 33.4418 17.625H34.6418C34.6418 9.7741 28.8072 3.31669 21.5002 3.31669V4.51669ZM9.5585 17.625C9.5585 10.3341 14.9541 4.51669 21.5002 4.51669V3.31669C14.1931 3.31669 8.3585 9.7741 8.3585 17.625H9.5585ZM21.3621 34.4996C20.2934 33.9158 17.3249 32.1556 14.6307 29.2966C11.937 26.4382 9.5585 22.5274 9.5585 17.625H8.3585C8.3585 22.9406 10.9413 27.1313 13.7573 30.1195C16.5727 33.1071 19.6623 34.9384 20.7868 35.5527L21.3621 34.4996ZM21.6382 34.4996C21.5465 34.5497 21.4538 34.5497 21.3621 34.4996L20.7868 35.5527C21.237 35.7987 21.7633 35.7987 22.2135 35.5527L21.6382 34.4996ZM26.2752 17.625C26.2752 20.5897 24.0882 22.9 21.5002 22.9V24.1C24.8492 24.1 27.4752 21.1497 27.4752 17.625H26.2752ZM21.5002 12.35C24.0882 12.35 26.2752 14.6604 26.2752 17.625H27.4752C27.4752 14.1003 24.8492 11.15 21.5002 11.15V12.35ZM16.7252 17.625C16.7252 14.6604 18.9121 12.35 21.5002 12.35V11.15C18.1511 11.15 15.5252 14.1003 15.5252 17.625H16.7252ZM21.5002 22.9C18.9121 22.9 16.7252 20.5897 16.7252 17.625H15.5252C15.5252 21.1497 18.1511 24.1 21.5002 24.1V22.9Z" fill="#222222"/>
+                        <path d="M35.4647 34.2708C36.8799 35.1639 37.625 36.177 37.625 37.2083C37.625 38.2396 36.8799 39.2527 35.4647 40.1458C34.0494 41.0389 32.0138 41.7806 29.5625 42.2962C27.1112 42.8119 24.3305 43.0833 21.5 43.0833C18.6695 43.0833 15.8888 42.8119 13.4375 42.2962C10.9862 41.7806 8.95061 41.0389 7.53534 40.1458C6.12008 39.2527 5.375 38.2396 5.375 37.2083C5.375 36.177 6.12008 35.1639 7.53534 34.2708" stroke="#222222" stroke-width="1.2" stroke-linecap="round"/>
+                    </svg>
+                    <h2>Location</h2>
+                    <input class="form-control" type="text" placeholder="Where do you want to go?">
+                </div>
+                <div class="col-4" id="dateSearch">
+                    <svg width="54" height="53" viewBox="0 0 54 53" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M17.625 8.83331H14.75C10.9788 8.83331 9.09315 8.83331 7.92157 10.0049C6.75 11.1765 6.75 13.0621 6.75 16.8333V21.5833C6.75 21.819 6.75 21.9369 6.82322 22.0101C6.89645 22.0833 7.0143 22.0833 7.25 22.0833H46.75C46.9857 22.0833 47.1036 22.0833 47.1768 22.0101C47.25 21.9369 47.25 21.819 47.25 21.5833V16.8333C47.25 13.0621 47.25 11.1765 46.0784 10.0049C44.9069 8.83331 43.0212 8.83331 39.25 8.83331H36.375L36.375 14.3541C36.375 15.1826 35.7034 15.8541 34.875 15.8541C34.0466 15.8541 33.375 15.1826 33.375 14.3541L33.375 8.83331H20.625L20.625 14.3541C20.625 15.1826 19.9534 15.8541 19.125 15.8541C18.2966 15.8541 17.625 15.1826 17.625 14.3541L17.625 8.83331Z" fill="#222222"/>
+                        <path d="M6.75 24.7917C6.75 24.556 6.75 24.4381 6.82322 24.3649C6.89645 24.2917 7.0143 24.2917 7.25 24.2917H46.75C46.9857 24.2917 47.1036 24.2917 47.1768 24.3649C47.25 24.4381 47.25 24.556 47.25 24.7917V36.1667C47.25 39.9379 47.25 41.8235 46.0784 42.9951C44.9069 44.1667 43.0212 44.1667 39.25 44.1667H14.75C10.9788 44.1667 9.09315 44.1667 7.92157 42.9951C6.75 41.8235 6.75 39.9379 6.75 36.1667V24.7917Z" fill="#7E869E" fill-opacity="0.25"/>
+                        <path d="M19.125 5.52081L19.125 14.3541" stroke="#222222" stroke-linecap="round"/>
+                        <path d="M34.875 5.52081L34.875 14.3541" stroke="#222222" stroke-linecap="round"/>
+                    </svg>
+    
+                    <h2>Date</h2>
+                    <div id="startDate">
+                        <input class="form-control" type="date">
+                        <h5>Start</h5>
+                    </div>
+                    <div id="startDate">
+                        <input class="form-control" type="date" >
+                        <h5>End</h5>
+                    </div>
+                    
+                </div>
+                <div id="smartSearch" class="col-5">
+                    <svg width="65px" viewBox="0 0 1024 1024" class="icon" version="1.1" xmlns="http://www.w3.org/2000/svg" fill="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><path d="M686.4 361.9c-48 0-171.3-40.2-186.6-45.2-36.6-10.9-138-39.1-171.9-39.1-31.6 0-118.9 22.5-164.1 35.1v465.1c42.9-11.9 125.7-33.5 161.7-33.5 46.6 0 171.9 36.6 186 40.8l0.3 0.1c39.2 12.3 149.3 44 187.3 43.4 29.3-0.5 107.5-24.9 148.2-38.6V324.9c-42.7 13.3-123.9 37-160.9 37z" fill="#FFFFFF"></path><path d="M887.4 269.9l-26.3 8.7c-36.5 12-139.1 43.3-174.7 43.3-35.5 0-137.8-31.3-174.3-43.3l-0.5-0.2c-13.9-4.2-137.6-40.8-183.7-40.8-47.5 0-175.2 36.6-189.6 40.8l-14.4 4.2V831l25.6-7.5c37.1-10.9 141.2-39.2 176.1-39.2 34.5 0 137.5 28.2 174.5 39.1 15.7 4.9 145.9 45.2 198.2 45.2h1.6c45.3-0.8 161.1-40.9 174.2-45.4l13.4-4.7-0.1-548.6zM511.8 785.2l-0.3-0.1c-14.1-4.2-139.4-40.8-186-40.8-36 0-118.8 21.6-161.7 33.5V312.7c45.2-12.6 132.5-35.1 164.1-35.1 34 0 135.4 28.1 171.9 39.1 15.3 5 138.6 45.2 186.6 45.2 36.9 0 118.2-23.6 160.9-36.9v465c-40.8 13.7-118.9 38.1-148.2 38.6-38 0.6-148.1-31.1-187.3-43.4z" fill="#000000"></path><path d="M721.7 168.6c-87.3 0-158.4 71-158.4 158.4 0 67.8 43.1 128.1 107.3 149.9 7.3 2.5 18.5 8.8 40.6 36 3.5 4.3 6.9 8.7 10 12.8 30.1-41.9 43.6-46.2 48.5-47.8 66.5-21.1 110.8-82.3 110.3-152.1-0.6-86.7-71.7-157.2-158.3-157.2z" fill="#FFFFFF"></path><path d="M861.5 186c-37.3-37.1-87-57.5-139.8-57.5-109.4 0-198.4 89-198.4 198.4 0 84.8 53.9 160.2 134 187.7 6.5 3.4 25.6 24.9 46.5 55.3 4 5.9 10.7 9.3 17.8 9.3h0.3c7.2-0.1 13.9-3.8 17.8-9.8 19-29.2 36.5-50 42.8-53.7 39.2-12.6 74.3-37.9 98.9-71.2 25.6-34.7 39-75.9 38.6-119.1-0.4-52.8-21.1-102.3-58.5-139.4zM670.6 476.9C606.4 455 563.3 394.8 563.3 327c0-87.3 71-158.4 158.4-158.4 86.7 0 157.7 70.5 158.4 157.2 0.5 69.9-43.8 131-110.3 152.1-4.9 1.6-18.5 5.9-48.5 47.8-3.1-4.1-6.5-8.5-10-12.8-22.2-27.2-33.4-33.5-40.7-36z" fill="#000000"></path><path d="M797.4 405.3c-2.4 0-4.8-0.9-6.7-2.6-4.1-3.7-4.4-10-0.7-14.1 15.5-17.1 23.9-39.3 23.8-62.5-0.4-50.4-41.7-91.4-92.1-91.4-12.8 0-25.2 2.6-36.8 7.6-5.1 2.2-11-0.1-13.2-5.2-2.2-5.1 0.1-11 5.2-13.2 14.2-6.2 29.2-9.3 44.8-9.3 29.9 0 57.9 11.5 79 32.5 21.1 20.9 32.8 48.9 33.1 78.8 0.2 28.2-10.1 55.2-28.9 76-2.1 2.3-4.8 3.4-7.5 3.4z" fill="#399d3a"></path><path d="M221 601.6c-0.5 0-1 0-1.6-0.1-5.5-0.9-9.2-6-8.3-11.4 0-0.1 0.3-2 0.9-5.3 1-5.4 6.3-9 11.7-7.9 5.4 1 9 6.3 7.9 11.7-0.6 2.9-0.8 4.5-0.8 4.6-0.7 4.9-5 8.4-9.8 8.4zM691.3 764.7h-3c-2.6 0-5.2-0.2-7.7-0.4-5.5-0.4-9.6-5.2-9.2-10.7 0.4-5.5 5.2-9.6 10.7-9.2 2.2 0.2 4.4 0.3 6.5 0.3h2.7c5.5 0 10 4.5 9.9 10.1 0.1 5.5-4.4 9.9-9.9 9.9z m39.6-4.3c-4.5 0-8.6-3.1-9.7-7.6-1.3-5.4 2-10.8 7.4-12.1 3-0.7 6-1.6 8.9-2.5 5.3-1.7 10.9 1.2 12.6 6.4 1.7 5.3-1.2 10.9-6.4 12.6-3.3 1.1-6.8 2.1-10.3 2.9-1 0.2-1.8 0.3-2.5 0.3z m-88.1-5.7c-1.3 0-2.7-0.3-4-0.8-3.2-1.4-6.5-3-9.7-4.7-4.9-2.6-6.7-8.7-4.1-13.5 2.6-4.9 8.7-6.7 13.5-4.1 2.7 1.5 5.5 2.8 8.3 4 5.1 2.2 7.4 8.1 5.2 13.2-1.7 3.7-5.3 5.9-9.2 5.9z m132.9-15.4c-3 0-5.9-1.3-7.9-3.8-3.4-4.3-2.6-10.6 1.7-14 2.4-1.8 4.6-3.8 6.8-5.9 4-3.8 10.3-3.7 14.1 0.3s3.7 10.3-0.3 14.1c-2.6 2.5-5.4 4.9-8.3 7.2-1.8 1.4-4 2.1-6.1 2.1z m-173.9-12.6c-2.5 0-5-0.9-7-2.8-2.5-2.4-5-5-7.4-7.6-3.7-4.1-3.5-10.4 0.6-14.1 4.1-3.7 10.4-3.5 14.1 0.6 2.1 2.3 4.3 4.6 6.5 6.7 4 3.8 4.1 10.2 0.2 14.1-1.8 2.1-4.4 3.1-7 3.1z m204.1-26.5c-1.3 0-2.7-0.3-4-0.9-5.1-2.2-7.3-8.1-5.1-13.2 1.2-2.7 2.3-5.6 3.3-8.5 1.8-5.2 7.4-8 12.7-6.3 5.2 1.8 8 7.4 6.3 12.7-1.2 3.4-2.5 6.9-3.9 10.1-1.8 3.9-5.5 6.1-9.3 6.1z m-234.5-12.8c-3.5 0-6.8-1.8-8.7-5-1.8-3.1-3.4-6.2-5-9.3-2.5-4.9-0.4-10.9 4.5-13.4s10.9-0.4 13.4 4.5c1.4 2.8 2.9 5.6 4.4 8.3 2.7 4.8 1.1 10.9-3.7 13.6-1.5 0.8-3.2 1.3-4.9 1.3z m-17.6-46.6c-4.5 0-8.5-3-9.7-7.5-0.8-3-1.6-6.2-2.5-9.4-1.5-5.3 1.6-10.8 6.9-12.3 5.3-1.5 10.8 1.6 12.3 6.9 1 3.4 1.8 6.7 2.7 9.9 1.4 5.4-1.9 10.8-7.2 12.2-0.8 0.1-1.6 0.2-2.5 0.2z m-14.9-47.7c-4.1 0-7.9-2.5-9.4-6.6-1.1-3.1-2.3-6.1-3.5-9.2-2-5.1 0.5-10.9 5.7-13 5.1-2 10.9 0.5 13 5.7 1.2 3.1 2.4 6.4 3.6 9.5 1.9 5.2-0.8 10.9-5.9 12.8-1.2 0.6-2.3 0.8-3.5 0.8z m-307.1-35c-1 0-2-0.2-3-0.5-5.3-1.7-8.2-7.3-6.5-12.6 1-3.3 2.1-6.5 3.3-9.7 1.8-5.2 7.5-8 12.7-6.1 5.2 1.8 8 7.5 6.1 12.7-1.1 3-2.1 6.1-3.1 9.2-1.3 4.3-5.2 7-9.5 7z m287.5-11c-3.7 0-7.2-2-9-5.6-1.4-2.9-2.9-5.8-4.4-8.7-2.6-4.9-0.7-10.9 4.2-13.5 4.9-2.6 10.9-0.7 13.5 4.2 1.6 3 3.1 6.1 4.6 9.1 2.4 5 0.4 10.9-4.5 13.4-1.4 0.8-2.9 1.1-4.4 1.1z m-268.8-35.3c-1.5 0-3.1-0.3-4.5-1.1-4.9-2.5-6.9-8.5-4.4-13.4 1.6-3.1 3.2-6.2 4.9-9.2 2.7-4.8 8.8-6.6 13.6-3.9 4.8 2.7 6.6 8.8 3.9 13.6-1.5 2.7-3 5.6-4.5 8.5-1.8 3.5-5.4 5.5-9 5.5z m243.8-7.8c-3.2 0-6.3-1.5-8.3-4.3-1.8-2.7-3.7-5.3-5.6-7.9-3.3-4.4-2.3-10.7 2.1-14 4.4-3.3 10.7-2.3 14 2.1 2 2.7 4 5.6 6 8.4 3.1 4.6 2 10.8-2.6 13.9-1.7 1.2-3.7 1.8-5.6 1.8z m-216.7-33.9c-2.3 0-4.6-0.8-6.5-2.4-4.2-3.6-4.7-9.9-1.2-14.1 2.3-2.7 4.7-5.4 7.1-7.9 3.8-4 10.2-4.1 14.1-0.3 4 3.8 4.1 10.2 0.3 14.1-2.1 2.2-4.2 4.5-6.3 6.9-1.8 2.5-4.6 3.7-7.5 3.7z m184.6-4.3c-2.5 0-4.9-0.9-6.9-2.7-2.3-2.2-4.7-4.3-7-6.3-4.2-3.6-4.7-9.9-1.1-14.1 3.6-4.2 9.9-4.7 14.1-1.1 2.6 2.2 5.3 4.6 7.8 7 4 3.8 4.2 10.1 0.4 14.1-2 2.1-4.7 3.1-7.3 3.1z m-146.4-27.4c-3.6 0-7-1.9-8.8-5.3-2.6-4.9-0.8-10.9 4.1-13.5 3.2-1.7 6.5-3.3 9.8-4.7 5.1-2.2 11 0.2 13.1 5.3s-0.2 11-5.3 13.1c-2.7 1.2-5.5 2.5-8.2 3.9-1.5 0.8-3.1 1.2-4.7 1.2z m105.7-1c-1.4 0-2.9-0.3-4.3-1-2.8-1.3-5.6-2.5-8.5-3.6-5.2-2-7.8-7.7-5.8-12.9s7.7-7.8 12.9-5.8c3.3 1.3 6.6 2.7 9.9 4.2 5 2.4 7.1 8.3 4.8 13.3-1.7 3.7-5.3 5.8-9 5.8z m-48-11.9h-1.3c-2.7-0.1-5.6-0.1-8.3 0-5.5 0.2-10.2-4.1-10.4-9.6-0.2-5.5 4.1-10.2 9.6-10.4 3.3-0.1 6.6-0.1 9.8 0h0.9c5.5 0.2 9.8 4.9 9.6 10.4-0.2 5.4-4.6 9.6-9.9 9.6zM816.1 651.8h-0.3c-5.5-0.2-9.9-4.8-9.7-10.3 0-1.5 0.1-3.1 0.1-4.7 0-5.5 4.4-10 10-10 5.5 0 10 4.5 10 10 0 1.8 0 3.6-0.1 5.3-0.1 5.4-4.6 9.7-10 9.7z" fill="#000000"></path><path d="M221 632.4c-13.2 0-24 10.8-24 24s10.8 24 24 24 24-10.8 24-24-10.8-24-24-24z" fill="#E6E6E6"></path><path d="M221 612.4c-24.2 0-44 19.7-44 44s19.7 44 44 44 44-19.7 44-44-19.8-44-44-44z m0 67.9c-13.2 0-24-10.8-24-24s10.8-24 24-24 24 10.8 24 24-10.8 24-24 24z" fill="#000000"></path><path d="M527.4 535.7c-18.3 0-33.1 14.9-33.1 33.1s14.9 33.1 33.1 33.1c18.3 0 33.1-14.9 33.1-33.1s-14.8-33.1-33.1-33.1z" fill="#E6E6E6"></path><path d="M527.4 515.7c-29.3 0-53.1 23.8-53.1 53.1s23.8 53.1 53.1 53.1 53.1-23.8 53.1-53.1-23.8-53.1-53.1-53.1z m0 86.3c-18.3 0-33.1-14.9-33.1-33.1s14.9-33.1 33.1-33.1c18.3 0 33.1 14.9 33.1 33.1S545.7 602 527.4 602z" fill="#000000"></path></g></svg><h3>Smart search</h3>
+                    <h4>Get personalized suggestions according to your interests</h4>
+                    <button id="smartSearchBtn" type="button" class="btn">Start</button>
+                </div>                
+            </div>
+
+        </div>
+             
+        
+        <div id="suggestions">
+            <h1 style="text-align: center;">Suggestions based on your account</h1>
+            <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="row ml-1">
+                            <div class="col-md-4">
+                                <div class="card d-block w-100 col">
+                                    <div class="col-md-4"></div>
+                                    <img src="assets/SR1.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                    <h5 class="card-title">AGO Bistro</h5>
+                                    <p class="card-text">With a modern Danish furnishings. Etched glass and vertical-grain Douglas fir also accent the space. With a dedication to using the best local produce, menus reflect seasonal changes and availability. Ingredients are sourced from the finest suppliers and farms, and are cooked simply to showcase the natural flavours of the food.</p>
+                                    <div id="location">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="21" height="27" viewBox="0 0 41 47" fill="none">
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M20.9431 35.0046C23.1068 33.7582 32.4583 27.7834 32.4583 17.6248C32.4583 10.0539 27.1044 3.9165 20.5 3.9165C13.8956 3.9165 8.54163 10.0539 8.54163 17.6248C8.54163 27.7835 17.8932 33.7582 20.0569 35.0046C20.336 35.1655 20.6639 35.1655 20.9431 35.0046ZM20.5 23.4998C23.3304 23.4998 25.625 20.8695 25.625 17.6248C25.625 14.3802 23.3304 11.7498 20.5 11.7498C17.6695 11.7498 15.375 14.3802 15.375 17.6248C15.375 20.8695 17.6695 23.4998 20.5 23.4998Z" fill="#222222"/>
+                                            <path d="M30.8562 32.3125C31.9057 33.2056 32.4583 34.2187 32.4583 35.25C32.4583 36.2813 31.9057 37.2944 30.8562 38.1875C29.8066 39.0806 28.297 39.8223 26.4791 40.3379C24.6612 40.8535 22.5991 41.125 20.5 41.125C18.4008 41.125 16.3387 40.8535 14.5208 40.3379C12.7029 39.8223 11.1933 39.0806 10.1437 38.1875C9.09418 37.2944 8.54163 36.2813 8.54163 35.25C8.54163 34.2187 9.09418 33.2056 10.1437 32.3125" stroke="#222222" stroke-width="2" stroke-linecap="round"/>
+                                        </svg>
+                                        <h6>Toronto, ON</h6>
+                                    </div>
+                                    <a href="#" class="btn">Learn more</a>
+                                    </div>
+                                </div>
+                            </div>
+                           
+                            <div class="col-md-4">
+                                    <div class="card d-block w-100 col" >
+                                        <div class="col-md-4"></div>
+                                        <img src="assets/SR2.jpg" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                        <h5 class="card-title">Canoe Restaurant and Bar</h5>
+                                        <p class="card-text">The design, originally conceptualized by noted designers Yabu Pushelberg and most recently refreshed by Solid Design Creative, is clean and simple, yet absolutely stylish - a brilliant reflection of Canada's rich raw environment. That same brilliance is captured through the flavours and textures of Chef Ron McKinlay’s inspired regional Canadian cuisine.</p>
+                                        <div id="location">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="21" height="27" viewBox="0 0 41 47" fill="none">
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M20.9431 35.0046C23.1068 33.7582 32.4583 27.7834 32.4583 17.6248C32.4583 10.0539 27.1044 3.9165 20.5 3.9165C13.8956 3.9165 8.54163 10.0539 8.54163 17.6248C8.54163 27.7835 17.8932 33.7582 20.0569 35.0046C20.336 35.1655 20.6639 35.1655 20.9431 35.0046ZM20.5 23.4998C23.3304 23.4998 25.625 20.8695 25.625 17.6248C25.625 14.3802 23.3304 11.7498 20.5 11.7498C17.6695 11.7498 15.375 14.3802 15.375 17.6248C15.375 20.8695 17.6695 23.4998 20.5 23.4998Z" fill="#222222"/>
+                                                <path d="M30.8562 32.3125C31.9057 33.2056 32.4583 34.2187 32.4583 35.25C32.4583 36.2813 31.9057 37.2944 30.8562 38.1875C29.8066 39.0806 28.297 39.8223 26.4791 40.3379C24.6612 40.8535 22.5991 41.125 20.5 41.125C18.4008 41.125 16.3387 40.8535 14.5208 40.3379C12.7029 39.8223 11.1933 39.0806 10.1437 38.1875C9.09418 37.2944 8.54163 36.2813 8.54163 35.25C8.54163 34.2187 9.09418 33.2056 10.1437 32.3125" stroke="#222222" stroke-width="2" stroke-linecap="round"/>
+                                            </svg>
+                                            <h6>Toronto, ON</h6>
+                                        </div>
+                                        <a href="#" class="btn">Learn more</a>
+                                        </div>
+                                    </div>
+                            </div>
+
+                            <div class="col-md-4">
+                                <div class="card d-block w-100 col">
+                                    <div class="col-md-4"></div>
+                                    <img src="assets/SR3.jpg" class="card-img-top h-479px" alt="...">
+                                    <div class="card-body">
+                                    <h5 class="card-title">Big Carrot</h5>
+                                    <p class="card-text">The Big Carrot has been the Danforth’s one-stop destination for ethical and healthy shopping since 1983. Like many health food grocery stores seeking to change the way we shop and eat, the Big Carrot is a worker-owned store. It's also certified to the Canada Organic Standard and prioritizes Organic and Non-GMO Project verified products.</p>
+                                    <div id="location">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="21" height="27" viewBox="0 0 41 47" fill="none">
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M20.9431 35.0046C23.1068 33.7582 32.4583 27.7834 32.4583 17.6248C32.4583 10.0539 27.1044 3.9165 20.5 3.9165C13.8956 3.9165 8.54163 10.0539 8.54163 17.6248C8.54163 27.7835 17.8932 33.7582 20.0569 35.0046C20.336 35.1655 20.6639 35.1655 20.9431 35.0046ZM20.5 23.4998C23.3304 23.4998 25.625 20.8695 25.625 17.6248C25.625 14.3802 23.3304 11.7498 20.5 11.7498C17.6695 11.7498 15.375 14.3802 15.375 17.6248C15.375 20.8695 17.6695 23.4998 20.5 23.4998Z" fill="#222222"/>
+                                            <path d="M30.8562 32.3125C31.9057 33.2056 32.4583 34.2187 32.4583 35.25C32.4583 36.2813 31.9057 37.2944 30.8562 38.1875C29.8066 39.0806 28.297 39.8223 26.4791 40.3379C24.6612 40.8535 22.5991 41.125 20.5 41.125C18.4008 41.125 16.3387 40.8535 14.5208 40.3379C12.7029 39.8223 11.1933 39.0806 10.1437 38.1875C9.09418 37.2944 8.54163 36.2813 8.54163 35.25C8.54163 34.2187 9.09418 33.2056 10.1437 32.3125" stroke="#222222" stroke-width="2" stroke-linecap="round"/>
+                                        </svg>
+                                        <h6>Toronto, ON </h6>
+                                    </div>
+                                    <a href="#" class="btn">Learn more</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </div>
+
+        <div id="destinations">
+            <h1 style="text-align: center;">Destinations</h1>
+            <div id="EcoFrindlySuggestions">
+                <div id="line2"></div>
+                <div id="places">
+                    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="row ml-1">
+                                    <div class="col-md-4">
+                                        <div class="card d-block w-100 col">
+                                            <div class="col-md-4"></div>
+                                            <img src="assets/location1.jpg" class="card-img-top" alt="...">
+                                            <div class="card-body">
+                                            <h5 class="card-title">Bruce Peninsula National Park</h5>
+                                            <p class="card-text">The park is best known for its unique wildflowers, especially orchids. There are 34 orchid species in the park, which is 2/3 of all orchid species found in Ontario. The variety of habitats and moderate climate are ideal for many species to flourish here!</p>
+                                            <div id="location">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="21" height="27" viewBox="0 0 41 47" fill="none">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M20.9431 35.0046C23.1068 33.7582 32.4583 27.7834 32.4583 17.6248C32.4583 10.0539 27.1044 3.9165 20.5 3.9165C13.8956 3.9165 8.54163 10.0539 8.54163 17.6248C8.54163 27.7835 17.8932 33.7582 20.0569 35.0046C20.336 35.1655 20.6639 35.1655 20.9431 35.0046ZM20.5 23.4998C23.3304 23.4998 25.625 20.8695 25.625 17.6248C25.625 14.3802 23.3304 11.7498 20.5 11.7498C17.6695 11.7498 15.375 14.3802 15.375 17.6248C15.375 20.8695 17.6695 23.4998 20.5 23.4998Z" fill="#222222"/>
+                                                    <path d="M30.8562 32.3125C31.9057 33.2056 32.4583 34.2187 32.4583 35.25C32.4583 36.2813 31.9057 37.2944 30.8562 38.1875C29.8066 39.0806 28.297 39.8223 26.4791 40.3379C24.6612 40.8535 22.5991 41.125 20.5 41.125C18.4008 41.125 16.3387 40.8535 14.5208 40.3379C12.7029 39.8223 11.1933 39.0806 10.1437 38.1875C9.09418 37.2944 8.54163 36.2813 8.54163 35.25C8.54163 34.2187 9.09418 33.2056 10.1437 32.3125" stroke="#222222" stroke-width="2" stroke-linecap="round"/>
+                                                </svg>
+                                                <h6>Tobermory, ON</h6>
+                                            </div>
+                                            <a href="#" class="btn">Learn more</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                   
+                                    <div class="col-md-4">
+                                            <div class="card d-block w-100 col" >
+                                                <div class="col-md-4"></div>
+                                                <img src="assets/location2.jpg" class="card-img-top" alt="...">
+                                                <div class="card-body">
+                                                <h5 class="card-title">Algonquin Provincial Park</h5>
+                                                <p class="card-text"> Its forests, rivers and numerous lakes, including the large Lake of Two Rivers, are home to moose, bears and common loons. The park’s many trails include the Whiskey Rapids Trail, along the Oxtongue River, and the Barron Canyon Trail, with views from the north rim</p>
+                                                <div id="location">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="21" height="27" viewBox="0 0 41 47" fill="none">
+                                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M20.9431 35.0046C23.1068 33.7582 32.4583 27.7834 32.4583 17.6248C32.4583 10.0539 27.1044 3.9165 20.5 3.9165C13.8956 3.9165 8.54163 10.0539 8.54163 17.6248C8.54163 27.7835 17.8932 33.7582 20.0569 35.0046C20.336 35.1655 20.6639 35.1655 20.9431 35.0046ZM20.5 23.4998C23.3304 23.4998 25.625 20.8695 25.625 17.6248C25.625 14.3802 23.3304 11.7498 20.5 11.7498C17.6695 11.7498 15.375 14.3802 15.375 17.6248C15.375 20.8695 17.6695 23.4998 20.5 23.4998Z" fill="#222222"/>
+                                                        <path d="M30.8562 32.3125C31.9057 33.2056 32.4583 34.2187 32.4583 35.25C32.4583 36.2813 31.9057 37.2944 30.8562 38.1875C29.8066 39.0806 28.297 39.8223 26.4791 40.3379C24.6612 40.8535 22.5991 41.125 20.5 41.125C18.4008 41.125 16.3387 40.8535 14.5208 40.3379C12.7029 39.8223 11.1933 39.0806 10.1437 38.1875C9.09418 37.2944 8.54163 36.2813 8.54163 35.25C8.54163 34.2187 9.09418 33.2056 10.1437 32.3125" stroke="#222222" stroke-width="2" stroke-linecap="round"/>
+                                                    </svg>
+                                                    <h6>Ontario 60, ON</h6>
+                                                </div>
+                                                <a href="#" class="btn">Learn more</a>
+                                                </div>
+                                            </div>
+                                    </div>
+    
+                                    <div class="col-md-4">
+                                        <div class="card d-block w-100 col">
+                                            <div class="col-md-4"></div>
+                                            <img src="assets/location3.jpg" class="card-img-top h-479px" alt="...">
+                                            <div class="card-body">
+                                            <h5 class="card-title">Georgian Bay Islands National Park</h5>
+                                            <p class="card-text">The islands are renowned for their diversity of reptiles and amphibians. With 33 species it has more of these creatures than any other national park in Canada. The park's population of reclusive Massasauga rattlesnakes, a threatened species, is of particular concern.</p>
+                                            <div id="location">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="21" height="27" viewBox="0 0 41 47" fill="none">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M20.9431 35.0046C23.1068 33.7582 32.4583 27.7834 32.4583 17.6248C32.4583 10.0539 27.1044 3.9165 20.5 3.9165C13.8956 3.9165 8.54163 10.0539 8.54163 17.6248C8.54163 27.7835 17.8932 33.7582 20.0569 35.0046C20.336 35.1655 20.6639 35.1655 20.9431 35.0046ZM20.5 23.4998C23.3304 23.4998 25.625 20.8695 25.625 17.6248C25.625 14.3802 23.3304 11.7498 20.5 11.7498C17.6695 11.7498 15.375 14.3802 15.375 17.6248C15.375 20.8695 17.6695 23.4998 20.5 23.4998Z" fill="#222222"/>
+                                                    <path d="M30.8562 32.3125C31.9057 33.2056 32.4583 34.2187 32.4583 35.25C32.4583 36.2813 31.9057 37.2944 30.8562 38.1875C29.8066 39.0806 28.297 39.8223 26.4791 40.3379C24.6612 40.8535 22.5991 41.125 20.5 41.125C18.4008 41.125 16.3387 40.8535 14.5208 40.3379C12.7029 39.8223 11.1933 39.0806 10.1437 38.1875C9.09418 37.2944 8.54163 36.2813 8.54163 35.25C8.54163 34.2187 9.09418 33.2056 10.1437 32.3125" stroke="#222222" stroke-width="2" stroke-linecap="round"/>
+                                                </svg>
+                                                <h6>Honey Harbour, ON </h6>
+                                            </div>
+                                            <a href="#" class="btn">Learn more</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="row ml-1">
+                                    <div class="col-md-4">
+                                        <div class="card d-block w-100 col" >
+                                            <div class="col-md-4"></div>
+                                            <img src="assets/location4.jpg" class="card-img-top" alt="...">
+                                            <div class="card-body">
+                                            <h5 class="card-title">Pukaskwa National Park </h5>
+                                            <p class="card-text">Pukaskwa National Park is known for a boardwalk leads to Horseshoe Beach, flanked by coniferous forest. The Bimose Kinoomagewnan Trail and the Anishinaabe Camp, with its traditional structures, showcase the culture and heritage of the Anishinaabe First Nation.</p>
+                                            <div id="location">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="21" height="27" viewBox="0 0 41 47" fill="none">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M20.9431 35.0046C23.1068 33.7582 32.4583 27.7834 32.4583 17.6248C32.4583 10.0539 27.1044 3.9165 20.5 3.9165C13.8956 3.9165 8.54163 10.0539 8.54163 17.6248C8.54163 27.7835 17.8932 33.7582 20.0569 35.0046C20.336 35.1655 20.6639 35.1655 20.9431 35.0046ZM20.5 23.4998C23.3304 23.4998 25.625 20.8695 25.625 17.6248C25.625 14.3802 23.3304 11.7498 20.5 11.7498C17.6695 11.7498 15.375 14.3802 15.375 17.6248C15.375 20.8695 17.6695 23.4998 20.5 23.4998Z" fill="#222222"/>
+                                                    <path d="M30.8562 32.3125C31.9057 33.2056 32.4583 34.2187 32.4583 35.25C32.4583 36.2813 31.9057 37.2944 30.8562 38.1875C29.8066 39.0806 28.297 39.8223 26.4791 40.3379C24.6612 40.8535 22.5991 41.125 20.5 41.125C18.4008 41.125 16.3387 40.8535 14.5208 40.3379C12.7029 39.8223 11.1933 39.0806 10.1437 38.1875C9.09418 37.2944 8.54163 36.2813 8.54163 35.25C8.54163 34.2187 9.09418 33.2056 10.1437 32.3125" stroke="#222222" stroke-width="2" stroke-linecap="round"/>
+                                                </svg>
+                                                <h6>Heron Bay, ON</h6>
+                                            </div>
+                                            <a href="#" class="btn">Learn more</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                   
+                                    <div class="col-md-4">
+                                            <div class="card d-block w-100 col">
+                                                <div class="col-md-4"></div>
+                                                <img src="assets/location5.jpg" class="card-img-top" alt="...">
+                                                <div class="card-body">
+                                                <h5 class="card-title">Lake Superior Provincial Park</h5>
+                                                <p class="card-text">Lake Superior Provincial Park is one of the largest provincial parks in Ontario, covering about 1,550 square kilometres along the northeastern shores of Lake Superior between Sault Ste. Marie and Wawa in Algoma District in Northeastern Ontario, Canada.</p>
+                                                <div id="location">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="21" height="27" viewBox="0 0 41 47" fill="none">
+                                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M20.9431 35.0046C23.1068 33.7582 32.4583 27.7834 32.4583 17.6248C32.4583 10.0539 27.1044 3.9165 20.5 3.9165C13.8956 3.9165 8.54163 10.0539 8.54163 17.6248C8.54163 27.7835 17.8932 33.7582 20.0569 35.0046C20.336 35.1655 20.6639 35.1655 20.9431 35.0046ZM20.5 23.4998C23.3304 23.4998 25.625 20.8695 25.625 17.6248C25.625 14.3802 23.3304 11.7498 20.5 11.7498C17.6695 11.7498 15.375 14.3802 15.375 17.6248C15.375 20.8695 17.6695 23.4998 20.5 23.4998Z" fill="#222222"/>
+                                                        <path d="M30.8562 32.3125C31.9057 33.2056 32.4583 34.2187 32.4583 35.25C32.4583 36.2813 31.9057 37.2944 30.8562 38.1875C29.8066 39.0806 28.297 39.8223 26.4791 40.3379C24.6612 40.8535 22.5991 41.125 20.5 41.125C18.4008 41.125 16.3387 40.8535 14.5208 40.3379C12.7029 39.8223 11.1933 39.0806 10.1437 38.1875C9.09418 37.2944 8.54163 36.2813 8.54163 35.25C8.54163 34.2187 9.09418 33.2056 10.1437 32.3125" stroke="#222222" stroke-width="2" stroke-linecap="round"/>
+                                                    </svg>
+                                                    <h6>North Part, ON</h6>
+                                                </div>
+                                                <a href="#" class="btn">Learn more</a>
+                                                </div>
+                                            </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="card d-block w-100 col">
+                                            <div class="col-md-4"></div>
+                                            <img src="assets/location6.jpg" class="card-img-top" alt="...">
+                                            <div class="card-body">
+                                            <h5 class="card-title">Royal Botanical Gardens</h5>
+                                            <p class="card-text">At over 1,100 hectares, RBG is Canada's largest botanical gardens and has been designated a national historic site. Explore thousands of indoor and outdoor exhibits, including five cultivated gardens. Hendrie Park is the largest and features the renowned rose garden.</p>
+                                            <div id="location">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="21" height="27" viewBox="0 0 41 47" fill="none">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M20.9431 35.0046C23.1068 33.7582 32.4583 27.7834 32.4583 17.6248C32.4583 10.0539 27.1044 3.9165 20.5 3.9165C13.8956 3.9165 8.54163 10.0539 8.54163 17.6248C8.54163 27.7835 17.8932 33.7582 20.0569 35.0046C20.336 35.1655 20.6639 35.1655 20.9431 35.0046ZM20.5 23.4998C23.3304 23.4998 25.625 20.8695 25.625 17.6248C25.625 14.3802 23.3304 11.7498 20.5 11.7498C17.6695 11.7498 15.375 14.3802 15.375 17.6248C15.375 20.8695 17.6695 23.4998 20.5 23.4998Z" fill="#222222"/>
+                                                    <path d="M30.8562 32.3125C31.9057 33.2056 32.4583 34.2187 32.4583 35.25C32.4583 36.2813 31.9057 37.2944 30.8562 38.1875C29.8066 39.0806 28.297 39.8223 26.4791 40.3379C24.6612 40.8535 22.5991 41.125 20.5 41.125C18.4008 41.125 16.3387 40.8535 14.5208 40.3379C12.7029 39.8223 11.1933 39.0806 10.1437 38.1875C9.09418 37.2944 8.54163 36.2813 8.54163 35.25C8.54163 34.2187 9.09418 33.2056 10.1437 32.3125" stroke="#222222" stroke-width="2" stroke-linecap="round"/>
+                                                </svg>
+                                                <h6>Burlington, ON</h6>
+                                            </div>
+                                            <a href="#" class="btn">Learn more</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="sr-only">Next</span>
+                        </a>
+                      </div>
+                </div>
+        </div>
+        <div id="aboutUs">
+            <h1 style="text-align: center;">About us</h1>
+            <div id="aboutUsText">
+                <p>
+                    Meet our Eco-Friendly Travel Planner! 🌍🌿
+                </p>
+                <p>
+                    Harnessing the power of Artificial Intelligence, our AI-driven planner takes travel to a whole new level. It's not just about exploring the world; it's about doing so sustainably and with your preferences in mind. Using cutting-edge machine learning, this planner deciphers your travel desires and crafts personalized, eco-friendly travel recommendations that suit your tastes.
+                </p>
+                <p>
+                    But that's not all. We believe in making eco-friendly travel accessible to everyone, no matter their budget. Our platform provides wallet-friendly recommendations, ensuring that sustainability isn't a luxury but a lifestyle choice within reach for all.
+                </p>   
+                <p>
+                    More than just an app, our Eco-Friendly Travel Planner is a force for change. We actively champion environmental conservation by highlighting eco-friendly destinations and supporting local businesses that prioritize sustainability. With each trip you plan, you're not just seeing the world; you're helping protect it.
+                </p>    
+                <p>
+                    Join us in your journey to explore the planet responsibly, one sustainable adventure at a time! 🌎💚
+                </p>   
+            </div>              
+
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>   
+    </body>
+</html>
