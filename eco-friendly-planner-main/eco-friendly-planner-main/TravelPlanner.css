@@ -1,0 +1,81 @@
+.a {
+    color: #000;
+
+    font-family: Inter;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+#TravelPlanner{
+    display: flex;
+}
+
+#line1{
+    width: 100%;
+    height: 10px;
+    flex-shrink: 0;
+    background: #588157;
+}
+
+#ecoStats{
+    display:inline-block;
+    width: 40%;
+    height: 200px;
+    flex-shrink: 0;
+    border-radius: 25px;
+    background-color: #588157;
+    color: #F0F8FF;
+    margin-left: 7%;
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+#line2{
+    width:100%;
+    height: 5px;
+    flex-shrink: 0;
+    background: #344E41;   
+    margin-top: 20px;
+}
+
+#EcoFrindlySuggestions{
+    width: 100%;
+    text-align: center;
+}
+
+#EcoFrindlySuggestions h1{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.card{
+    width: 10px;
+}
+
+.row{
+    justify-content: space-between;
+}
+
+#location{
+    display: flex;
+    overflow: hidden;
+}
+
+.btn{
+    background-color: #344E41;
+    color: aliceblue;
+}
+
+#schedule{
+    margin-top: 50px;
+    background-color: #588157;
+    color: #F0F8FF;
+    border-radius: 25px;
+    margin-bottom: 50px;
+}
+#schedule .row{
+    margin-top:50px;
+   
+}

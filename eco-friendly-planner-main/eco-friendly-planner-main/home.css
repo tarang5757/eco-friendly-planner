@@ -1,0 +1,135 @@
+#locationsearch input{
+    border-radius: 25px;
+}
+
+#mainPage{
+    margin-left: 30px;
+}
+
+.btn{
+    background-color: #588157;
+    color: white;
+}
+
+#locationSearch, #dateSearch{
+    border-right-style:solid ;
+    border-right-color: #588157;
+   
+}
+
+#homePage{
+    position: relative;
+    width: 1300px;
+    height: 500px;
+    padding-top: 50px;
+    text-align: center;
+    flex-shrink: 0;
+    border-radius: 30px;
+    background: #AAC1B4;
+}
+
+#input{
+    position: relative;
+    padding: 20px;
+    border-radius: 25px;
+    background: #F3F9EC;
+    top: -100px;
+    width: 75%;
+    margin-left: 200px;
+}
+
+#homePage h3{
+    /* height: 149px; */
+    flex-shrink: 0;
+    color: #000;
+
+   
+    font-family: Inter;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+#homePage h1{
+ margin-top: 20px;
+flex-shrink: 0;
+color: #000;
+
+text-align: center;
+font-family: Inter;
+font-size: 50px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+}
+
+#homePage p {
+    flex-shrink: 0;
+    color: #344E41;
+    margin-top: 30px;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+
+    width: 900px;
+    margin-left: 200px;
+
+}
+
+#EcoFrindlySuggestions{
+    width: 100%;
+    text-align: center;
+}
+
+#EcoFrindlySuggestions h1{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#EcoFrindlySuggestions .card{
+    width: 10px;
+}
+
+#EcoFrindlySuggestions .row{
+    justify-content: space-between;
+}
+
+#location{
+    display: flex;
+    overflow: hidden;
+}
+
+#EcoFrindlySuggestions .btn{
+    background-color: #344E41;
+    color: aliceblue;
+}
+
+#destinations h1{
+    margin-top: 30px;
+    margin-bottom: 60px;
+}
+
+#aboutUs p{
+    color: #344E41;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+#aboutUs{
+    background-color: #AAC1B4;
+    justify-content: center;
+    width: 1350px;
+    margin-left: 10px;
+    padding: 10px;
+    margin-top: 50px;
+}
+
+#suggestions h1{
+    margin-bottom: 50px;
+}

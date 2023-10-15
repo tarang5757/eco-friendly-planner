@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Using a Map Id</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="index.css">
+
+</head>
+
+<body>
+    <h1>EcoSpots Map: </h1>
+    <script src="https:ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <input type="text" id="location">
+    <input type="text" placeholder="latitude" id="lat">
+    <input type="text" placeholder="longitude" id="lng">
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            var autocomplete;
+            var id = 'location';
+
+            autocomplete = new google.maps.places.Autocomplete(document.getElementById(id), {
+                types: ['geocode']
+            });
+            google.maps.event.addListener(autocomplete, 'place_changed', function () {
+                var place = autocomplete.getPlace();
+
+                $("#lat").val(place.geometry.location.lat());
+                $("#lng").val(place.geometry.location.lng());
+            });
+        });
+    </script>
+    <br>
+    <br>
+    <div id="map"></div>
+    <script
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBN1N-xFCu3RtBXfHIIGaxeXsyXg22RGcI&map_ids=7e3e5ea353ef0c7e&libraries=places&callback=initMap"
+        defer></script>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

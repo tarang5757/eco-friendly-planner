@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="TravelPlanner.css">
+    <script src="TravelPlanner.js" async defer></script>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-light bg-light bg-white">
+        <a class="navbar-brand" href="logedHome.html">
+            <img src="assets/logo.png" width="80" height="80" class="d-inline-block align-top" alt="">
+        </a>
+        <a class="navbar-brand" href="logedHome.html">
+            Home
+        </a>
+        <a class="navbar-brand" href="#EcoFrindlySuggestions">
+            Suggestions
+        </a>
+        <a class="navbar-brand" href="logedHome.html#destinations">
+            Destinations
+        </a>
+        <a class="navbar-brand" href="#TravelPlanner">
+            Planner
+        </a>
+        <a class="navbar-brand" href="logedHome.html#aboutUs">
+            About us
+        </a>
+        <a class="navbar-brand" href="logedHome.html#homePage">
+            Username
+            <svg xmlns="http://www.w3.org/2000/svg" width="50" height="46" viewBox="0 0 111 101" fill="none">
+                <ellipse cx="55.5" cy="42.0834" rx="13.875" ry="12.625" stroke="#222222" stroke-linecap="round" />
+                <ellipse cx="55.5" cy="50.5" rx="41.625" ry="37.875" stroke="#222222" />
+                <path
+                    d="M83.25 78.7207C81.6132 74.2465 78.0064 70.293 72.9891 67.4732C67.9717 64.6534 61.8242 63.125 55.5 63.125C49.1758 63.125 43.0283 64.6534 38.011 67.4732C32.9936 70.293 29.3868 74.2465 27.75 78.7207"
+                    stroke="#222222" stroke-linecap="round" />
+            </svg>
+        </a>
+
+
+    </nav>
+
+    <div id="TravelPlanner">
+
+        <svg id="calendar" xmlns="http://www.w3.org/2000/svg" width="50" height="46" viewBox="0 0 141 144" fill="none">
+            <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M48.4375 24H25.625C21.8538 24 19.9681 24 18.7966 25.1716C17.625 26.3431 17.625 28.2288 17.625 32V59.5C17.625 59.7357 17.625 59.8536 17.6982 59.9268C17.7714 60 17.8893 60 18.125 60H122.875C123.111 60 123.229 60 123.302 59.9268C123.375 59.8536 123.375 59.7357 123.375 59.5V32C123.375 28.2288 123.375 26.3431 122.203 25.1716C121.032 24 119.146 24 115.375 24H92.5625L92.5625 39C92.5625 39.8284 91.891 40.5 91.0625 40.5C90.2341 40.5 89.5625 39.8284 89.5625 39L89.5625 24H51.4375L51.4375 39C51.4375 39.8284 50.766 40.5 49.9375 40.5C49.1091 40.5 48.4375 39.8284 48.4375 39L48.4375 24Z"
+                fill="#222222" />
+            <path
+                d="M17.625 66.5C17.625 66.2643 17.625 66.1464 17.6982 66.0732C17.7714 66 17.8893 66 18.125 66H122.875C123.111 66 123.229 66 123.302 66.0732C123.375 66.1464 123.375 66.2643 123.375 66.5V112C123.375 115.771 123.375 117.657 122.203 118.828C121.032 120 119.146 120 115.375 120H25.625C21.8538 120 19.9681 120 18.7966 118.828C17.625 117.657 17.625 115.771 17.625 112V66.5Z"
+                fill="#7E869E" fill-opacity="0.25" />
+            <path d="M49.9375 15L49.9375 39" stroke="#222222" stroke-linecap="round" />
+            <path d="M91.0625 15L91.0625 39" stroke="#222222" stroke-linecap="round" />
+        </svg>
+        <h2>Traveling Planner</h2>
+    </div>
+
+    <div id="line1"></div>
+
+    <div id="schedule" class="container py-7">
+        <h2 id="scheduleText" class="text-uppercase text-letter-spacing-xs font-weight-bold"
+            style="text-align: center;">
+            Schedule
+        </h2>
+        <div class="row">
+            <div class="col-lg-4 mb-3" id="Friday, Nov 13th">
+                <h4 class="mt-0 mb-3 op-8 font-weight-bold">
+                    Friday, Nov 13th
+                </h4>
+                <ul class="list-timeline list-timeline-primary">
+                    <li class="list-timeline-item p-0 pb-3 pb-lg-4 d-flex flex-wrap flex-column" data-toggle="collapse"
+                        data-target="#day-1-item-6">
+                        <p class="my-0  flex-fw text-sm text-uppercase"><span class="text-inverse op-8">16:00 -
+                                18:00</span> - Garden X</p>
+                    </li>
+                    <li class="list-timeline-item p-0 pb-3 d-flex flex-wrap flex-column">
+                        <p class="my-0  flex-fw text-sm text-uppercase"><span class="text-inverse op-8">18:00 -
+                                23:00</span> - Dinner at bar Y</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-lg-4 mb-3" id="Saturday, Nov 14th">
+                <h4 class="mt-0 mb-3  op-8 font-weight-bold">
+                    Saturday, Nov 14th
+                </h4>
+                <ul class="list-timeline list-timeline-primary">
+                    <li class="list-timeline-item p-0 pb-3 d-flex flex-wrap flex-column">
+                        <p class="my-0 flex-fw text-sm text-uppercase"><span class="text-inverse op-8">8:00 -
+                                12:00</span> - Apple picking</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-lg-4 mb-3" id="Sunday, Nov 15th">
+                <h4 class="mt-0 mb-3 op-8 font-weight-bold">
+                    Sunday, Nov 15th
+                </h4>
+                <ul class="list-timeline list-timeline-primary">
+                    <li class="list-timeline-item p-0 pb-3 pb-lg-4 d-flex flex-wrap flex-column">
+                        <p class="my-0 flex-fw text-sm text-uppercase"><span class="text-inverse op-8">15:00 -
+                                16:00</span> - Visit local business Z</p>
+                    </li>
+                    <li class="list-timeline-item p-0 pb-3 pb-lg-4 d-flex flex-wrap flex-column" data-toggle="collapse"
+                        data-target="#day-3-item-6">
+                        <p class="my-0 flex-fw text-sm text-uppercase"><span class="text-inverse op-8">16:00 -
+                                18:00</span> - Sunset at A</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div id="ecoStats" class="container">
+        <h3> Eco Stats: </h3>
+        <h3> Carbon Foorprint: xxxxxxxxxx</h3>
+        <h3> Money saved: xxxxxxxxxx</h3>
+    </div>
+    <div id="ecoStats" class="container">
+        <h3> Business met: xxxxxxxxxx </h3>
+        <h3> Locations visited: xxxxxxxxxx</h3>
+        <h3> Reviews made: xxxxxxxxxx</h3>
+    </div>
+
+    <div id="EcoFrindlySuggestions">
+        <h1>Suggestions based on your travel location</h1>
+        <div id="line2"></div>
+        <div id="places">
+            <h1>Places to visit</h1>
+            <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="row ml-1">
+                            <div class="col-md-4">
+                                <div class="card d-block w-100 col">
+                                    <div class="col-md-4"></div>
+                                    <img src="assets/location1.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Bruce Peninsula National Park</h5>
+                                        <p class="card-text">The park is best known for its unique wildflowers,
+                                            especially orchids. There are 34 orchid species in the park, which is 2/3 of
+                                            all orchid species found in Ontario. The variety of habitats and moderate
+                                            climate are ideal for many species to flourish here!</p>
+                                        <div id="location">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="21" height="27"
+                                                viewBox="0 0 41 47" fill="none">
+                                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                                    d="M20.9431 35.0046C23.1068 33.7582 32.4583 27.7834 32.4583 17.6248C32.4583 10.0539 27.1044 3.9165 20.5 3.9165C13.8956 3.9165 8.54163 10.0539 8.54163 17.6248C8.54163 27.7835 17.8932 33.7582 20.0569 35.0046C20.336 35.1655 20.6639 35.1655 20.9431 35.0046ZM20.5 23.4998C23.3304 23.4998 25.625 20.8695 25.625 17.6248C25.625 14.3802 23.3304 11.7498 20.5 11.7498C17.6695 11.7498 15.375 14.3802 15.375 17.6248C15.375 20.8695 17.6695 23.4998 20.5 23.4998Z"
+                                                    fill="#222222" />
+                                                <path
+                                                    d="M30.8562 32.3125C31.9057 33.2056 32.4583 34.2187 32.4583 35.25C32.4583 36.2813 31.9057 37.2944 30.8562 38.1875C29.8066 39.0806 28.297 39.8223 26.4791 40.3379C24.6612 40.8535 22.5991 41.125 20.5 41.125C18.4008 41.125 16.3387 40.8535 14.5208 40.3379C12.7029 39.8223 11.1933 39.0806 10.1437 38.1875C9.09418 37.2944 8.54163 36.2813 8.54163 35.25C8.54163 34.2187 9.09418 33.2056 10.1437 32.3125"
+                                                    stroke="#222222" stroke-width="2" stroke-linecap="round" />
+                                            </svg>
+                                            <h6>Tobermory, ON</h6>
+                                        </div>
+                                        <a href="#" class="btn">Learn more</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-4">
+                                <div class="card d-block w-100 col">
+                                    <div class="col-md-4"></div>
+                                    <img src="assets/location2.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Algonquin Provincial Park</h5>
+                                        <p class="card-text"> Its forests, rivers and numerous lakes, including the
+                                            large Lake of Two Rivers, are home to moose, bears and common loons. The
+                                            park’s many trails include the Whiskey Rapids Trail, along the Oxtongue
+                                            River, and the Barron Canyon Trail, with views from the north rim</p>
+                                        <div id="location">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="21" height="27"
+                                                viewBox="0 0 41 47" fill="none">
+                                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                                    d="M20.9431 35.0046C23.1068 33.7582 32.4583 27.7834 32.4583 17.6248C32.4583 10.0539 27.1044 3.9165 20.5 3.9165C13.8956 3.9165 8.54163 10.0539 8.54163 17.6248C8.54163 27.7835 17.8932 33.7582 20.0569 35.0046C20.336 35.1655 20.6639 35.1655 20.9431 35.0046ZM20.5 23.4998C23.3304 23.4998 25.625 20.8695 25.625 17.6248C25.625 14.3802 23.3304 11.7498 20.5 11.7498C17.6695 11.7498 15.375 14.3802 15.375 17.6248C15.375 20.8695 17.6695 23.4998 20.5 23.4998Z"
+                                                    fill="#222222" />
+                                                <path
+                                                    d="M30.8562 32.3125C31.9057 33.2056 32.4583 34.2187 32.4583 35.25C32.4583 36.2813 31.9057 37.2944 30.8562 38.1875C29.8066 39.0806 28.297 39.8223 26.4791 40.3379C24.6612 40.8535 22.5991 41.125 20.5 41.125C18.4008 41.125 16.3387 40.8535 14.5208 40.3379C12.7029 39.8223 11.1933 39.0806 10.1437 38.1875C9.09418 37.2944 8.54163 36.2813 8.54163 35.25C8.54163 34.2187 9.09418 33.2056 10.1437 32.3125"
+                                                    stroke="#222222" stroke-width="2" stroke-linecap="round" />
+                                            </svg>
+                                            <h6>Ontario 60, ON</h6>
+                                        </div>
+                                        <a href="#" class="btn">Learn more</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-4">
+                                <div class="card d-block w-100 col">
+                                    <div class="col-md-4"></div>
+                                    <img src="assets/location3.jpg" class="card-img-top h-479px" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Georgian Bay Islands National Park</h5>
+                                        <p class="card-text">The islands are renowned for their diversity of reptiles
+                                            and amphibians. With 33 species it has more of these creatures than any
+                                            other national park in Canada. The park's population of reclusive Massasauga
+                                            rattlesnakes, a threatened species, is of particular concern.</p>
+                                        <div id="location">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="21" height="27"
+                                                viewBox="0 0 41 47" fill="none">
+                                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                                    d="M20.9431 35.0046C23.1068 33.7582 32.4583 27.7834 32.4583 17.6248C32.4583 10.0539 27.1044 3.9165 20.5 3.9165C13.8956 3.9165 8.54163 10.0539 8.54163 17.6248C8.54163 27.7835 17.8932 33.7582 20.0569 35.0046C20.336 35.1655 20.6639 35.1655 20.9431 35.0046ZM20.5 23.4998C23.3304 23.4998 25.625 20.8695 25.625 17.6248C25.625 14.3802 23.3304 11.7498 20.5 11.7498C17.6695 11.7498 15.375 14.3802 15.375 17.6248C15.375 20.8695 17.6695 23.4998 20.5 23.4998Z"
+                                                    fill="#222222" />
+                                                <path
+                                                    d="M30.8562 32.3125C31.9057 33.2056 32.4583 34.2187 32.4583 35.25C32.4583 36.2813 31.9057 37.2944 30.8562 38.1875C29.8066 39.0806 28.297 39.8223 26.4791 40.3379C24.6612 40.8535 22.5991 41.125 20.5 41.125C18.4008 41.125 16.3387 40.8535 14.5208 40.3379C12.7029 39.8223 11.1933 39.0806 10.1437 38.1875C9.09418 37.2944 8.54163 36.2813 8.54163 35.25C8.54163 34.2187 9.09418 33.2056 10.1437 32.3125"
+                                                    stroke="#222222" stroke-width="2" stroke-linecap="round" />
+                                            </svg>
+                                            <h6>Honey Harbour, ON </h6>
+                                        </div>
+                                        <a href="#" class="btn">Learn more</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row ml-1">
+                            <div class="col-md-4">
+                                <div class="card d-block w-100 col">
+                                    <div class="col-md-4"></div>
+                                    <img src="assets/location4.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Pukaskwa National Park </h5>
+                                        <p class="card-text">A boardwalk leads to Horseshoe Beach, flanked by coniferous
+                                            forest. The Bimose Kinoomagewnan Trail and the Anishinaabe Camp, with its
+                                            traditional structures, showcase the culture and heritage of the Anishinaabe
+                                            First Nation.</p>
+                                        <div id="location">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="21" height="27"
+                                                viewBox="0 0 41 47" fill="none">
+                                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                                    d="M20.9431 35.0046C23.1068 33.7582 32.4583 27.7834 32.4583 17.6248C32.4583 10.0539 27.1044 3.9165 20.5 3.9165C13.8956 3.9165 8.54163 10.0539 8.54163 17.6248C8.54163 27.7835 17.8932 33.7582 20.0569 35.0046C20.336 35.1655 20.6639 35.1655 20.9431 35.0046ZM20.5 23.4998C23.3304 23.4998 25.625 20.8695 25.625 17.6248C25.625 14.3802 23.3304 11.7498 20.5 11.7498C17.6695 11.7498 15.375 14.3802 15.375 17.6248C15.375 20.8695 17.6695 23.4998 20.5 23.4998Z"
+                                                    fill="#222222" />
+                                                <path
+                                                    d="M30.8562 32.3125C31.9057 33.2056 32.4583 34.2187 32.4583 35.25C32.4583 36.2813 31.9057 37.2944 30.8562 38.1875C29.8066 39.0806 28.297 39.8223 26.4791 40.3379C24.6612 40.8535 22.5991 41.125 20.5 41.125C18.4008 41.125 16.3387 40.8535 14.5208 40.3379C12.7029 39.8223 11.1933 39.0806 10.1437 38.1875C9.09418 37.2944 8.54163 36.2813 8.54163 35.25C8.54163 34.2187 9.09418 33.2056 10.1437 32.3125"
+                                                    stroke="#222222" stroke-width="2" stroke-linecap="round" />
+                                            </svg>
+                                            <h6>Heron Bay, ON</h6>
+                                        </div>
+                                        <a href="#" class="btn">Learn more</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-4">
+                                <div class="card d-block w-100 col">
+                                    <div class="col-md-4"></div>
+                                    <img src="assets/location5.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Lake Superior Provincial Park</h5>
+                                        <p class="card-text">Lake Superior Provincial Park is one of the largest
+                                            provincial parks in Ontario, covering about 1,550 square kilometres along
+                                            the northeastern shores of Lake Superior between Sault Ste. Marie and Wawa
+                                            in Algoma District in Northeastern Ontario, Canada.</p>
+                                        <div id="location">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="21" height="27"
+                                                viewBox="0 0 41 47" fill="none">
+                                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                                    d="M20.9431 35.0046C23.1068 33.7582 32.4583 27.7834 32.4583 17.6248C32.4583 10.0539 27.1044 3.9165 20.5 3.9165C13.8956 3.9165 8.54163 10.0539 8.54163 17.6248C8.54163 27.7835 17.8932 33.7582 20.0569 35.0046C20.336 35.1655 20.6639 35.1655 20.9431 35.0046ZM20.5 23.4998C23.3304 23.4998 25.625 20.8695 25.625 17.6248C25.625 14.3802 23.3304 11.7498 20.5 11.7498C17.6695 11.7498 15.375 14.3802 15.375 17.6248C15.375 20.8695 17.6695 23.4998 20.5 23.4998Z"
+                                                    fill="#222222" />
+                                                <path
+                                                    d="M30.8562 32.3125C31.9057 33.2056 32.4583 34.2187 32.4583 35.25C32.4583 36.2813 31.9057 37.2944 30.8562 38.1875C29.8066 39.0806 28.297 39.8223 26.4791 40.3379C24.6612 40.8535 22.5991 41.125 20.5 41.125C18.4008 41.125 16.3387 40.8535 14.5208 40.3379C12.7029 39.8223 11.1933 39.0806 10.1437 38.1875C9.09418 37.2944 8.54163 36.2813 8.54163 35.25C8.54163 34.2187 9.09418 33.2056 10.1437 32.3125"
+                                                    stroke="#222222" stroke-width="2" stroke-linecap="round" />
+                                            </svg>
+                                            <h6>North Part, ON</h6>
+                                        </div>
+                                        <a href="#" class="btn">Learn more</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="card d-block w-100 col">
+                                    <div class="col-md-4"></div>
+                                    <img src="assets/location6.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Royal Botanical Gardens</h5>
+                                        <p class="card-text">At over 1,100 hectares, RBG is Canada's largest botanical
+                                            gardens and has been designated a national historic site. Explore thousands
+                                            of indoor and outdoor exhibits, including five cultivated gardens. Hendrie
+                                            Park is the largest and features the renowned rose garden.</p>
+                                        <div id="location">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="21" height="27"
+                                                viewBox="0 0 41 47" fill="none">
+                                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                                    d="M20.9431 35.0046C23.1068 33.7582 32.4583 27.7834 32.4583 17.6248C32.4583 10.0539 27.1044 3.9165 20.5 3.9165C13.8956 3.9165 8.54163 10.0539 8.54163 17.6248C8.54163 27.7835 17.8932 33.7582 20.0569 35.0046C20.336 35.1655 20.6639 35.1655 20.9431 35.0046ZM20.5 23.4998C23.3304 23.4998 25.625 20.8695 25.625 17.6248C25.625 14.3802 23.3304 11.7498 20.5 11.7498C17.6695 11.7498 15.375 14.3802 15.375 17.6248C15.375 20.8695 17.6695 23.4998 20.5 23.4998Z"
+                                                    fill="#222222" />
+                                                <path
+                                                    d="M30.8562 32.3125C31.9057 33.2056 32.4583 34.2187 32.4583 35.25C32.4583 36.2813 31.9057 37.2944 30.8562 38.1875C29.8066 39.0806 28.297 39.8223 26.4791 40.3379C24.6612 40.8535 22.5991 41.125 20.5 41.125C18.4008 41.125 16.3387 40.8535 14.5208 40.3379C12.7029 39.8223 11.1933 39.0806 10.1437 38.1875C9.09418 37.2944 8.54163 36.2813 8.54163 35.25C8.54163 34.2187 9.09418 33.2056 10.1437 32.3125"
+                                                    stroke="#222222" stroke-width="2" stroke-linecap="round" />
+                                            </svg>
+                                            <h6>Burlington, ON</h6>
+                                        </div>
+                                        <a href="#" class="btn">Learn more</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </div>
+        <div id="sr">
+            <h1>Stores/Restaurants</h1>
+            <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="row ml-1">
+                            <div class="col-md-4">
+                                <div class="card d-block w-100 col">
+                                    <div class="col-md-4"></div>
+                                    <img src="assets/SR1.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">AGO Bistro</h5>
+                                        <p class="card-text">With a modern Danish furnishings. Etched glass and
+                                            vertical-grain Douglas fir also accent the space. With a dedication to using
+                                            the best local produce, menus reflect seasonal changes and availability.
+                                            Ingredients are sourced from the finest suppliers and farms, and are cooked
+                                            simply to showcase the natural flavours of the food.</p>
+                                        <div id="location">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="21" height="27"
+                                                viewBox="0 0 41 47" fill="none">
+                                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                                    d="M20.9431 35.0046C23.1068 33.7582 32.4583 27.7834 32.4583 17.6248C32.4583 10.0539 27.1044 3.9165 20.5 3.9165C13.8956 3.9165 8.54163 10.0539 8.54163 17.6248C8.54163 27.7835 17.8932 33.7582 20.0569 35.0046C20.336 35.1655 20.6639 35.1655 20.9431 35.0046ZM20.5 23.4998C23.3304 23.4998 25.625 20.8695 25.625 17.6248C25.625 14.3802 23.3304 11.7498 20.5 11.7498C17.6695 11.7498 15.375 14.3802 15.375 17.6248C15.375 20.8695 17.6695 23.4998 20.5 23.4998Z"
+                                                    fill="#222222" />
+                                                <path
+                                                    d="M30.8562 32.3125C31.9057 33.2056 32.4583 34.2187 32.4583 35.25C32.4583 36.2813 31.9057 37.2944 30.8562 38.1875C29.8066 39.0806 28.297 39.8223 26.4791 40.3379C24.6612 40.8535 22.5991 41.125 20.5 41.125C18.4008 41.125 16.3387 40.8535 14.5208 40.3379C12.7029 39.8223 11.1933 39.0806 10.1437 38.1875C9.09418 37.2944 8.54163 36.2813 8.54163 35.25C8.54163 34.2187 9.09418 33.2056 10.1437 32.3125"
+                                                    stroke="#222222" stroke-width="2" stroke-linecap="round" />
+                                            </svg>
+                                            <h6>Toronto, ON</h6>
+                                        </div>
+                                        <a href="#" class="btn">Learn more</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-4">
+                                <div class="card d-block w-100 col">
+                                    <div class="col-md-4"></div>
+                                    <img src="assets/SR2.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Canoe Restaurant and Bar</h5>
+                                        <p class="card-text">The design, originally conceptualized by noted designers
+                                            Yabu Pushelberg and most recently refreshed by Solid Design Creative, is
+                                            clean and simple, yet absolutely stylish - a brilliant reflection of
+                                            Canada's rich raw environment. That same brilliance is captured through the
+                                            flavours and textures of Chef Ron McKinlay’s inspired regional Canadian
+                                            cuisine.</p>
+                                        <div id="location">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="21" height="27"
+                                                viewBox="0 0 41 47" fill="none">
+                                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                                    d="M20.9431 35.0046C23.1068 33.7582 32.4583 27.7834 32.4583 17.6248C32.4583 10.0539 27.1044 3.9165 20.5 3.9165C13.8956 3.9165 8.54163 10.0539 8.54163 17.6248C8.54163 27.7835 17.8932 33.7582 20.0569 35.0046C20.336 35.1655 20.6639 35.1655 20.9431 35.0046ZM20.5 23.4998C23.3304 23.4998 25.625 20.8695 25.625 17.6248C25.625 14.3802 23.3304 11.7498 20.5 11.7498C17.6695 11.7498 15.375 14.3802 15.375 17.6248C15.375 20.8695 17.6695 23.4998 20.5 23.4998Z"
+                                                    fill="#222222" />
+                                                <path
+                                                    d="M30.8562 32.3125C31.9057 33.2056 32.4583 34.2187 32.4583 35.25C32.4583 36.2813 31.9057 37.2944 30.8562 38.1875C29.8066 39.0806 28.297 39.8223 26.4791 40.3379C24.6612 40.8535 22.5991 41.125 20.5 41.125C18.4008 41.125 16.3387 40.8535 14.5208 40.3379C12.7029 39.8223 11.1933 39.0806 10.1437 38.1875C9.09418 37.2944 8.54163 36.2813 8.54163 35.25C8.54163 34.2187 9.09418 33.2056 10.1437 32.3125"
+                                                    stroke="#222222" stroke-width="2" stroke-linecap="round" />
+                                            </svg>
+                                            <h6>Toronto, ON</h6>
+                                        </div>
+                                        <a href="#" class="btn">Learn more</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-4">
+                                <div class="card d-block w-100 col">
+                                    <div class="col-md-4"></div>
+                                    <img src="assets/SR3.jpg" class="card-img-top h-479px" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Big Carrot</h5>
+                                        <p class="card-text">The Big Carrot has been the Danforth’s one-stop destination
+                                            for ethical and healthy shopping since 1983. Like many health food grocery
+                                            stores seeking to change the way we shop and eat, the Big Carrot is a
+                                            worker-owned store. It's also certified to the Canada Organic Standard and
+                                            prioritizes Organic and Non-GMO Project verified products.</p>
+                                        <div id="location">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="21" height="27"
+                                                viewBox="0 0 41 47" fill="none">
+                                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                                    d="M20.9431 35.0046C23.1068 33.7582 32.4583 27.7834 32.4583 17.6248C32.4583 10.0539 27.1044 3.9165 20.5 3.9165C13.8956 3.9165 8.54163 10.0539 8.54163 17.6248C8.54163 27.7835 17.8932 33.7582 20.0569 35.0046C20.336 35.1655 20.6639 35.1655 20.9431 35.0046ZM20.5 23.4998C23.3304 23.4998 25.625 20.8695 25.625 17.6248C25.625 14.3802 23.3304 11.7498 20.5 11.7498C17.6695 11.7498 15.375 14.3802 15.375 17.6248C15.375 20.8695 17.6695 23.4998 20.5 23.4998Z"
+                                                    fill="#222222" />
+                                                <path
+                                                    d="M30.8562 32.3125C31.9057 33.2056 32.4583 34.2187 32.4583 35.25C32.4583 36.2813 31.9057 37.2944 30.8562 38.1875C29.8066 39.0806 28.297 39.8223 26.4791 40.3379C24.6612 40.8535 22.5991 41.125 20.5 41.125C18.4008 41.125 16.3387 40.8535 14.5208 40.3379C12.7029 39.8223 11.1933 39.0806 10.1437 38.1875C9.09418 37.2944 8.54163 36.2813 8.54163 35.25C8.54163 34.2187 9.09418 33.2056 10.1437 32.3125"
+                                                    stroke="#222222" stroke-width="2" stroke-linecap="round" />
+                                            </svg>
+                                            <h6>Toronto, ON </h6>
+                                        </div>
+                                        <a href="#" class="btn">Learn more</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="business">
+                <h1>Support small business owners</h1>
+                <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="row ml-1">
+                                <div class="col-md-4">
+                                    <div class="card d-block w-100 col">
+                                        <div class="col-md-4"></div>
+                                        <img src="assets/SR1.jpg" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Business 1</h5>
+                                            <p class="card-text">With a modern Danish furnishings. Etched glass and
+                                                vertical-grain Douglas fir also accent the space. With a dedication to
+                                                using the best local produce, menus reflect seasonal changes and
+                                                availability. Ingredients are sourced from the finest suppliers and
+                                                farms, and are cooked simply to showcase the natural flavours of the
+                                                food.</p>
+                                            <div id="location">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="21" height="27"
+                                                    viewBox="0 0 41 47" fill="none">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                                        d="M20.9431 35.0046C23.1068 33.7582 32.4583 27.7834 32.4583 17.6248C32.4583 10.0539 27.1044 3.9165 20.5 3.9165C13.8956 3.9165 8.54163 10.0539 8.54163 17.6248C8.54163 27.7835 17.8932 33.7582 20.0569 35.0046C20.336 35.1655 20.6639 35.1655 20.9431 35.0046ZM20.5 23.4998C23.3304 23.4998 25.625 20.8695 25.625 17.6248C25.625 14.3802 23.3304 11.7498 20.5 11.7498C17.6695 11.7498 15.375 14.3802 15.375 17.6248C15.375 20.8695 17.6695 23.4998 20.5 23.4998Z"
+                                                        fill="#222222" />
+                                                    <path
+                                                        d="M30.8562 32.3125C31.9057 33.2056 32.4583 34.2187 32.4583 35.25C32.4583 36.2813 31.9057 37.2944 30.8562 38.1875C29.8066 39.0806 28.297 39.8223 26.4791 40.3379C24.6612 40.8535 22.5991 41.125 20.5 41.125C18.4008 41.125 16.3387 40.8535 14.5208 40.3379C12.7029 39.8223 11.1933 39.0806 10.1437 38.1875C9.09418 37.2944 8.54163 36.2813 8.54163 35.25C8.54163 34.2187 9.09418 33.2056 10.1437 32.3125"
+                                                        stroke="#222222" stroke-width="2" stroke-linecap="round" />
+                                                </svg>
+                                                <h6>Toronto, ON</h6>
+                                            </div>
+                                            <a href="#" class="btn">Learn more</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-4">
+                                    <div class="card d-block w-100 col">
+                                        <div class="col-md-4"></div>
+                                        <img src="assets/SR2.jpg" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Business 2</h5>
+                                            <p class="card-text">The design, originally conceptualized by noted
+                                                designers Yabu Pushelberg and most recently refreshed by Solid Design
+                                                Creative, is clean and simple, yet absolutely stylish - a brilliant
+                                                reflection of Canada's rich raw environment. That same brilliance is
+                                                captured through the flavours and textures of Chef Ron McKinlay’s
+                                                inspired regional Canadian cuisine.</p>
+                                            <div id="location">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="21" height="27"
+                                                    viewBox="0 0 41 47" fill="none">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                                        d="M20.9431 35.0046C23.1068 33.7582 32.4583 27.7834 32.4583 17.6248C32.4583 10.0539 27.1044 3.9165 20.5 3.9165C13.8956 3.9165 8.54163 10.0539 8.54163 17.6248C8.54163 27.7835 17.8932 33.7582 20.0569 35.0046C20.336 35.1655 20.6639 35.1655 20.9431 35.0046ZM20.5 23.4998C23.3304 23.4998 25.625 20.8695 25.625 17.6248C25.625 14.3802 23.3304 11.7498 20.5 11.7498C17.6695 11.7498 15.375 14.3802 15.375 17.6248C15.375 20.8695 17.6695 23.4998 20.5 23.4998Z"
+                                                        fill="#222222" />
+                                                    <path
+                                                        d="M30.8562 32.3125C31.9057 33.2056 32.4583 34.2187 32.4583 35.25C32.4583 36.2813 31.9057 37.2944 30.8562 38.1875C29.8066 39.0806 28.297 39.8223 26.4791 40.3379C24.6612 40.8535 22.5991 41.125 20.5 41.125C18.4008 41.125 16.3387 40.8535 14.5208 40.3379C12.7029 39.8223 11.1933 39.0806 10.1437 38.1875C9.09418 37.2944 8.54163 36.2813 8.54163 35.25C8.54163 34.2187 9.09418 33.2056 10.1437 32.3125"
+                                                        stroke="#222222" stroke-width="2" stroke-linecap="round" />
+                                                </svg>
+                                                <h6>Toronto, ON</h6>
+                                            </div>
+                                            <a href="#" class="btn">Learn more</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-4">
+                                    <div class="card d-block w-100 col">
+                                        <div class="col-md-4"></div>
+                                        <img src="assets/SR3.jpg" class="card-img-top h-479px" alt="...">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Business 3</h5>
+                                            <p class="card-text">The Big Carrot has been the Danforth’s one-stop
+                                                destination for ethical and healthy shopping since 1983. Like many
+                                                health food grocery stores seeking to change the way we shop and eat,
+                                                the Big Carrot is a worker-owned store. It's also certified to the
+                                                Canada Organic Standard and prioritizes Organic and Non-GMO Project
+                                                verified products.</p>
+                                            <div id="location">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="21" height="27"
+                                                    viewBox="0 0 41 47" fill="none">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                                        d="M20.9431 35.0046C23.1068 33.7582 32.4583 27.7834 32.4583 17.6248C32.4583 10.0539 27.1044 3.9165 20.5 3.9165C13.8956 3.9165 8.54163 10.0539 8.54163 17.6248C8.54163 27.7835 17.8932 33.7582 20.0569 35.0046C20.336 35.1655 20.6639 35.1655 20.9431 35.0046ZM20.5 23.4998C23.3304 23.4998 25.625 20.8695 25.625 17.6248C25.625 14.3802 23.3304 11.7498 20.5 11.7498C17.6695 11.7498 15.375 14.3802 15.375 17.6248C15.375 20.8695 17.6695 23.4998 20.5 23.4998Z"
+                                                        fill="#222222" />
+                                                    <path
+                                                        d="M30.8562 32.3125C31.9057 33.2056 32.4583 34.2187 32.4583 35.25C32.4583 36.2813 31.9057 37.2944 30.8562 38.1875C29.8066 39.0806 28.297 39.8223 26.4791 40.3379C24.6612 40.8535 22.5991 41.125 20.5 41.125C18.4008 41.125 16.3387 40.8535 14.5208 40.3379C12.7029 39.8223 11.1933 39.0806 10.1437 38.1875C9.09418 37.2944 8.54163 36.2813 8.54163 35.25C8.54163 34.2187 9.09418 33.2056 10.1437 32.3125"
+                                                        stroke="#222222" stroke-width="2" stroke-linecap="round" />
+                                                </svg>
+                                                <h6>Toronto, ON </h6>
+                                            </div>
+                                            <a href="#" class="btn">Learn more</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
+            integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+            crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
+            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+            crossorigin="anonymous"></script>
+</body>
+
+</html>
