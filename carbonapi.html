@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Find carbon emissions</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    
+    <label for="car">Car size:</label>
+    <select id="car">
+    <option value="Car-Size-Small">Car-Size-Small</option>
+    <option value="Car-Size-Medium">Car-Size-Medium</option>
+    <option value="Car-Size-Large">Car-Size-Large</option>
+    </select>
+    <p>Select number of km the car will go:</p>
+    <input type="number" placeholder="1000" id="dist">
+    <button onclick="carbonapi()">Calculate</button>
+    <p id="result"></p>
+
+    <script src="carbonapi.js"></script>
+    
+</body>
+</html>
