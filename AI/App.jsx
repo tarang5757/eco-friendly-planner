@@ -5,7 +5,7 @@ import './App.css'
 import '@chatscope/chat-ui-kit-styles/dist/default/styles.min.css';
 import { MainContainer, ChatContainer, MessageList, Message, MessageInput, TypingIndicator } from '@chatscope/chat-ui-kit-react'
 
-const API_KEY = "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";
+const API_KEY = "";
 
 function App() {
   const [typing, setTyping] = useState(false);
