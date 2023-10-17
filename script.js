@@ -6,7 +6,7 @@ function initMap() {
 
     const map = new google.maps.Map(document.getElementById("map"),
      {
-        mapId: "7e3e5ea353ef0c7e",
+        mapId: "",
         zoom: 12,
         center: { lat: Number(latitudeEl.value), lng: Number(longitudeEl.value) },
     });
