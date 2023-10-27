@@ -2,7 +2,16 @@ function carbonapi(){
 
   const car = document.getElementById('car').value;
   const dist = document.getElementById('dist').value;
+  const units = document.getElementById('unit').value;
 
+  if(dist<=0){
+    document.getElementById('result').innerText = `Distance greater than 0 only`;
+    return;
+  }
+  if(dist>10000){
+    document.getElementById('result').innerText = `Distance can not be greater than 10000`;
+    return;
+  }
   const payload = "vehicle_type="+car+"&distance_value="+dist+"&distance_unit=km";
 
   const headers = {
@@ -24,11 +33,28 @@ function carbonapi(){
     return response.json();
   })
   .then(data => {
-    if (data && data.data && data.data.co2e_kg) {
+    if (units == "kg") {
       const co2e_kg = data.data.co2e_kg;
       document.getElementById('result').innerText = `CO2 Equivalent (kg): ${co2e_kg}kg`;
-    } else {
-      document.getElementById('result').innerText = `Result: Failed to retrieve CO2 equivalent (kg) from the response. `;
+    } 
+
+    else if (units == "g") {
+      const co2e_gm = data.data.co2e_gm;
+      document.getElementById('result').innerText = `CO2 Equivalent (g): ${co2e_gm}g`;
+    } 
+
+    else if (units == "mt") {
+      const co2e_mt = data.data.co2e_mt;
+      document.getElementById('result').innerText = `CO+ Equivalent (mt): ${co2e_mt}mt`;
+    } 
+
+    else if (units == "lb") {
+      const co2e_lb = data.data.co2e_lb;
+      document.getElementById('result').innerText = `CO2 Equivalent (lb): ${co2e_lb}lb`;
+    } 
+    
+    else {
+      document.getElementById('result').innerText = `Result: Failed to retrieve CO2 equivalent from the response. `;
     }
   })
   

@@ -1,25 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <title>Find carbon emissions</title>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-</head>
-<body>
-    
-    <label for="car">Car size:</label>
-    <select id="car">
-    <option value="Car-Size-Small">Car-Size-Small</option>
-    <option value="Car-Size-Medium">Car-Size-Medium</option>
-    <option value="Car-Size-Large">Car-Size-Large</option>
-    </select>
-    <p>Select number of km the car will go:</p>
-    <input type="number" placeholder="1000" id="dist">
-    <button onclick="carbonapi()">Calculate</button>
-    <p id="result"></p>
 
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find Carbon Emissions</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #50C878, #009F75);
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 400px;
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 24px;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        label {
+            display: block;
+            margin-top: 10px;
+            font-weight: bold;
+        }
+
+        select,
+        input,
+        button {
+            width: 90%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        button {
+            background-color: #007bff;
+            color: #fff;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        #result {
+            font-weight: bold;
+            font-size: 18px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Carbon Emissions Calculator</h1>
+        <label for="car">Car size:</label>
+        <select id="car">
+            <option value="Car-Size-Small">Small Car</option>
+            <option value="Car-Size-Medium">Medium Car</option>
+            <option value="Car-Size-Large">Large Car</option>
+        </select>
+        <p>Select the number of kilometers the car will travel:</p>
+        <input type="number" placeholder="1000" id="dist">
+
+        <label for="unit">Units:</label>
+        <select id="unit">
+            <option value="kg">Killograms(kg)</option>
+            <option value="g">Grams(g)</option>
+            <option value="mt">Tonne(mt)</option>
+            <option value="lb">Pounds(lb)</option>
+        </select>
+
+        <button onclick="carbonapi()">Calculate</button>
+        <p id="result"></p>
+    </div>
     <script src="carbonapi.js"></script>
-    
 </body>
+
 </html>
